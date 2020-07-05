@@ -66,16 +66,17 @@ Then build and flush to your ESP32.
 
 ## Release note
 
-Now is experimental project. If you interest to this project. Please contact me.
+Now, This is experimental project. If you interest to this project. Please contact me.
 
 ## Contribution
 
 If you find bug or want to new functions, please write issue.
+
 If you fix your self, please fork and send pull request.
 
 ## LICENSE
 
-his software license under MIT licence.
+This software license under MIT licence.
 
 ## Special Thanks.
 
