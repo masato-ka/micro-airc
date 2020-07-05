@@ -9,7 +9,7 @@ namespace airc{
 
         RangeSensor* rangeSensor = new airc::RangeSensorImpl();
         rangeSensor->setAddress((uint8_t)21,(uint8_t)22,(uint8_t)20);
- 
+        
         Agent* agent = nullptr;
         if(!strcmp(agent_name, "pidagent")){
             agent = new PidAgentImpl(); 
@@ -18,7 +18,9 @@ namespace airc{
 
         if(!strcmp(agent_name, "nnagent")){
             agent = new NNAgentImpl(); 
-            agent->initialize(motorDriver, rangeSensor);
+            TfMicroWrapper* tfMicroWrapper = new TfMicroWrapper();
+            tfMicroWrapper->initialize();
+            ((NNAgentImpl*)agent)->initialize(motorDriver, rangeSensor, tfMicroWrapper);
         }
 
 
