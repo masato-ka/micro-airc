@@ -20,16 +20,16 @@ Install [Arduino_TensorFlowLite_ESP32](https://github.com/tanakamasayuki/Arduino
 
 ### NN learning on Google Colaboratory.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/masato-ka/airc-micro/blob/tools/airc_micro_tensorflow_keras.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/masato-ka/micro-airc/blob/tools/airc_micro_tensorflow_keras.ipynb)
 
 You can using simple_airccar_simulation_tensorflow_keras.ipynb. Open notebook with colab. This notebook simulate airc-micro. and running model training. At end of notebook you can download trained model as model of TensorFlow lite for microcontoroller .
 
 Simulation version is here:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/masato-ka/airc-micro/blob/tools/simple_airccar_simulation_tensorflow_keras.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/masato-ka/micro-airc/blob/tools/simple_airccar_simulation_tensorflow_keras.ipynb)
 
 ### Deploy model file
 
-Replace airc-micro/model/airc_model.cpp with the download file.
+Replace micro-airc/src/model/airc_model.cpp with the download file.
 
 ### Compile and Write to Board
 
