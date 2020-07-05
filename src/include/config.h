@@ -1,5 +1,3 @@
-
-
 #ifndef CONFIG_H
 #define CONFIG_H
 
@@ -26,7 +24,7 @@ const uint8_t RIGHT_SENSOR_ADDRESS = 22;
 
 //Mode
 const String AGENT_NAME="nnagent";
-
+const String BLUETOOTH_SUFFIX="AircMicro";
 
 }
 

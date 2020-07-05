@@ -1,7 +1,4 @@
 #include "../include/pid_agent_impl.h"
-#include "BluetoothSerial.h"
-
-
 
 namespace airc{
 BluetoothSerial SerialBT;
@@ -12,7 +9,7 @@ const int DIFF = 50;
 void PidAgentImpl::initialize(MotorDriver* motorDriver, RangeSensor* rangeSensor){
     this->motorDriver = motorDriver;
     this->rangeSensor = rangeSensor;
-    SerialBT.begin("RumiCar_ESP32");
+    SerialBT.begin(BLUETOOTH_SUFFIX);
 };
 
 

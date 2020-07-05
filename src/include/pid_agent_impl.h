@@ -1,3 +1,6 @@
+#include <Wire.h>
+#include "config.h"
+#include "BluetoothSerial.h"
 #include "interface/agent/agent.h"
 #include "interface/parts/motor_driver.h"
 #include "interface/parts/range_sensor.h"
