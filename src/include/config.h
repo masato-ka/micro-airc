@@ -23,7 +23,7 @@ const uint8_t CENTER_SENSOR_ADDRESS = 21;
 const uint8_t RIGHT_SENSOR_ADDRESS = 22;
 
 //Mode
-const String AGENT_NAME="nnagent";// pidagent or nnagent.
+const String AGENT_NAME="ragent";// ragent, pidagent or nnagent.
 const String BLUETOOTH_SUFFIX="AircMicro";
 
 }

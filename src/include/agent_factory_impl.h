@@ -2,6 +2,7 @@
 #include "interface/parts/motor_driver.h"
 #include "interface/parts/range_sensor.h"
 #include "pid_agent_impl.h"
+#include "remote_agent_impl.h"
 #include "nn_agent_impl.h"
 #include "range_sensor_impl.h"
 #include "drv8835_impl.h"
