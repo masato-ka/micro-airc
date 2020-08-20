@@ -29,18 +29,19 @@ namespace airc{
 
         this->tfMicroWrapper->invoke();
 
-        float label_acc[3] = {this->output->data.f[0],this->output->data.f[1],this->output->data.f[2]};
-        float max = label_acc[0];
-        //Getting most high number label.
-        int result = 0;
-        for(int i=1; i < 3; i++){
-            if(max < label_acc[i]){
-            max = label_acc[i];
-            result = i;
-            }
-        }
-
-        motorDriver->cmd((float)(result-1) ,1.0);
+        // float label_acc[3] = {this->output->data.f[0],this->output->data.f[1],this->output->data.f[2]};
+        // float max = label_acc[0];
+        // //Getting most high number label.
+        // int result = 0;
+        // for(int i=1; i < 3; i++){
+        //     if(max < label_acc[i]){
+        //     max = label_acc[i];
+        //     result = i;
+        //     }
+        // }
+        //motorDriver->cmd(0.0, 1.0);
+        motorDriver->cmd(-1.0*this->output->data.f[0],this->output->data.f[1]);
+        // motorDriver->cmd((float)(result-1) ,1.0);
     };
 
     void NNAgentImpl::stop(){
